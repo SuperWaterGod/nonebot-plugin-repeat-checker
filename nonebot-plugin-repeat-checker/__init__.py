@@ -33,15 +33,15 @@ __plugin_meta__ = PluginMetadata(
 
 - `repeat_checker_repeat_threshold`:
   - **说明**: 触发禁言的最小复读次数。
-  - **默认值**: `3`
+  - **默认值**: `2`
 
 - `repeat_checker_silence_duration`:
   - **说明**: 基础禁言时长（单位：秒）。
-  - **默认值**: `60`
+  - **默认值**: `3600`
 
 - `repeat_checker_similarity_threshold`:
   - **说明**: 文本相似度阈值，用于判断是否为复读（范围 0.0-1.0）。
-  - **默认值**: `0.95`
+  - **默认值**: `0.8`
 
 - `repeat_checker_enable_image_check`:
   - **说明**: 是否启用图片复读检测。
