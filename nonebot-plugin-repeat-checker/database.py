@@ -117,7 +117,7 @@ class RepeatDatabase:
             group_id,
             last_message_content=new_content,
             last_repeater_id=user_id,
-            repeat_count=1
+            repeat_count=0
         )
 
 
