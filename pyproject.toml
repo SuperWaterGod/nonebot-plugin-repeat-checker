@@ -17,9 +17,7 @@ keywords = ["nonebot", "nonebot2", "plugin", "repeat", "ban", "group"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: AsyncIO",
-    "Framework :: Nonebot",
     "License :: OSI Approved :: GNU Affero General Public License v3",
-    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
