@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nonebot-plugin-repeat-checker"
-version = "1.0.0"
+version = "1.1.0"
 description = "A NoneBot2 plugin to detect and ban repeat messages in groups"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -40,7 +40,7 @@ Documentation = "https://github.com/SuperWaterGod/nonebot-plugin-repeat-checker#
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_repeat_checker"]
-plugin_dirs = ["nonebot-plugin-repeat-checker"]
+plugin_dirs = ["nonebot_plugin_repeat_checker"]
 builtin_plugins = []
 
 [tool.ruff]
