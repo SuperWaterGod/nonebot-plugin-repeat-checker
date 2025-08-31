@@ -1,11 +1,10 @@
 from nonebot import get_plugin_config, get_driver
 from nonebot.plugin import PluginMetadata
-from nonebot import logger, require
+from nonebot import logger
 
 from .config import Config
 from .database import create_database
 from .checker import initialize_checker
-require("nonebot_plugin_localstore")
 
 # 获取插件配置
 plugin_config = get_plugin_config(Config)
@@ -67,7 +66,7 @@ __plugin_meta__ = PluginMetadata(
     extra={
         "author": "SuperWaterGod",
         "license": "AGPL-3.0",
-        "version": "1.2.4",
+        "version": "1.2.5",
     },
 )
 

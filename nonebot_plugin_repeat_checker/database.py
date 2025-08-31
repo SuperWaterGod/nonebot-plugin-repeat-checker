@@ -1,7 +1,8 @@
 import aiosqlite
 from typing import Optional, Dict, Any
 from contextlib import asynccontextmanager
-from nonebot import logger, get_plugin_config
+from nonebot import logger, get_plugin_config, require
+require("nonebot_plugin_localstore")
 from nonebot_plugin_localstore import get_plugin_data_dir
 
 from .config import Config
