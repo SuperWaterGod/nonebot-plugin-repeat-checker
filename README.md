@@ -105,7 +105,6 @@ _✨ 适用于 NoneBot2 的群复读检测与禁言插件 ✨_
 | `repeat_checker_silence_duration` | 否  | 3600 | 基础禁言时长（秒） |
 | `repeat_checker_similarity_threshold` |  否 | 0.8 | 消息相似度阈值（0-1） |
 | `repeat_checker_repeat_threshold` |  否 | 2 | 触发禁言的最小复读次数 |
-| `repeat_checker_db_path` |  否 | `data/plugins/nonebot-plugin-repeat-checker/data.db` | SQLite数据库文件路径 |
 | `repeat_checker_enable_image_check` |  否 | True | 是否启用图片复读检测 |
 | `repeat_checker_debug` |  否 | False | 是否启用调试模式 |
 | `repeat_checker_group_mode` |  否 | "blacklist" | 群组控制模式（whitelist/blacklist） |
@@ -205,6 +204,10 @@ repeat_checker_group_list = [111111, 222222]
 4. **群组控制**：合理配置群组白名单/黑名单，避免在不需要的群组启用功能
 
 ## 更新日志
+
+### v1.2.0
+- 使用 `localstore` 插件
+- 删除非必要驱动器依赖
 
 ### v1.1.0
 - 按照Nonebot2插件规范修改

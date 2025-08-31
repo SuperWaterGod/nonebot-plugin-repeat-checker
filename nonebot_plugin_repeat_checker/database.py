@@ -1,8 +1,8 @@
 import aiosqlite
-from pathlib import Path
 from typing import Optional, Dict, Any
 from contextlib import asynccontextmanager
 from nonebot import logger, get_plugin_config
+from nonebot_plugin_localstore import get_plugin_data_dir
 
 from .config import Config
 
@@ -12,11 +12,13 @@ class RepeatDatabase:
 
     def __init__(self, config: Config):
         self.config = config
-        self.db_path = Path(config.repeat_checker_db_path)
+        self.db_path = get_plugin_data_dir() / "data.db"
         self._ensure_db_dir()
 
     def _ensure_db_dir(self):
         """确保数据库目录存在"""
+        if self.config.repeat_checker_debug:
+            logger.info(f"数据库路径: {self.db_path}")
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
 
     async def init_database(self):

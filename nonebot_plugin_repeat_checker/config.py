@@ -12,9 +12,6 @@ class Config(BaseModel):
     # 最小复读次数（达到此次数才会触发禁言）
     repeat_checker_repeat_threshold: int = 2
 
-    # 数据文件保存路径（相对于项目根目录）
-    repeat_checker_db_path: str = "data/plugins/nonebot-plugin-repeat-checker/data.db"
-
     # 是否启用图片复读检测
     repeat_checker_enable_image_check: bool = True
 
