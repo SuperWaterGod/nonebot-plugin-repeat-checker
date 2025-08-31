@@ -67,7 +67,7 @@ __plugin_meta__ = PluginMetadata(
     extra={
         "author": "SuperWaterGod",
         "license": "AGPL-3.0",
-        "version": "1.2.2",
+        "version": "1.2.4",
     },
 )
 
